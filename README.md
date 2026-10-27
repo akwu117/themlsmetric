@@ -1,6 +1,6 @@
-Th# AkWu MLS Metric
+# The MLS Metric
 
-**AkWu MLS Metric** is a custom performance evaluation system designed to highlight top performers in Major League Soccer (MLS) by applying **monetary bounties** to key match statistics. The result is a unique, value-based ranking system that reflects each player's contribution in dollars, offering an alternative to traditional stat-based leaderboards.
+**The MLS Metric** is a custom performance evaluation system designed to highlight top performers in Major League Soccer (MLS) by applying **monetary bounties** to key match statistics. The result is a unique, value-based ranking system that reflects each player's contribution in dollars, offering an alternative to traditional stat-based leaderboards.
 
 ## 📊 What This Project Includes
 
@@ -30,7 +30,7 @@ These stats are totaled to form a player's **Earning**, which when added to base
 
 ## 📂 Folder Structure
 
-## AkWu MLS Metric – Weekly Player Valuation System
+## The MLS Metric – Weekly Player Valuation System
 
 This project tracks and analyzes Major League Soccer player performance using SQL-based metrics and Tableau dashboards.  
 
