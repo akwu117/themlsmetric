@@ -17,12 +17,15 @@ The metric expresses its scores in dollars. These amounts are model outputs, not
 3. Query player results and weekly trends.
 4. Present comparisons through Tableau and written analysis.
 
-The public repository currently contains the rule documents and historical SQL query snippets. The source workbooks, database tables, import workflow, and Tableau dashboards are not packaged here yet, so this repository is not currently a complete runnable release.
+Start with the [April 7–14, 2025 SQL case study](case-studies/25APR07-14/README.md): a player-value comparison that led to a documented data-quality investigation. It includes read-only queries, observed results, and a confirmed source correction.
+
+The repository also contains rule documents and historical SQL snippets. The queries require an existing MySQL database; a standalone sample dataset and Tableau dashboard evidence are planned.
 
 ## Explore the repository
 
 | Material | Purpose |
 | --- | --- |
+| [Two-week SQL case study](case-studies/25APR07-14/README.md) | Compare player values, investigate a result, and audit goal rewards |
 | [SQL query guide](sqltables/README.md) | Explains the historical weekly queries and their requirements |
 | [2026 updated rules](<MLM 2026 Updated Laws copy.pdf>) | Project rule document |
 | [Additional 2026 rules](<MXM2026LAWS copy.pdf>) | Additional project rule document |
@@ -43,8 +46,8 @@ Useful questions for analysis include:
 
 ## Tools and skills
 
-- **SQL / MySQL:** querying weekly player records and preparing analytical results.
-- **Spreadsheets:** maintaining source records and custom calculations.
+- **SQL / MySQL:** self-joins, aggregation, conditional logic, and data-quality audits.
+- **Spreadsheets:** maintaining source records, tracing discrepancies, and replacing manual calculations with formulas.
 - **Tableau:** presenting player comparisons and trends; dashboard evidence is still to be added to this repository.
 
 ## Scope and limitations

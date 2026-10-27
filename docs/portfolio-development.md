@@ -1,12 +1,16 @@
 # Portfolio development
 
-## Current public contents
+## Available in this repository
 
-The repository contains two 2026 rule PDFs and historical weekly SQL snippets. It does not yet contain a reproducible database setup or dashboard screenshots.
+- [April 7–14, 2025 SQL case study](../case-studies/25APR07-14/README.md): six read-only queries with run order, observed findings, and correction status.
+- Historical weekly SQL snippets and their [query guide](../sqltables/README.md).
+- Two 2026 rule PDFs.
 
-## Evidence available in the local project
+The case study demonstrates a local analysis and data-quality investigation. A database schema and sample dataset are not yet packaged for a fresh installation.
 
-A saved validation report dated October 20, 2026 records the following database snapshot:
+## Recorded local database snapshot
+
+A saved validation report dated October 20, 2026 records:
 
 | Season | Player-week records | Distinct weeks |
 | --- | ---: | ---: |
@@ -14,20 +18,20 @@ A saved validation report dated October 20, 2026 records the following database 
 | 2025 | 3,162 | 29 |
 | 2026 | 3,091 | 24 |
 
-The report records zero workbook-field mismatches for the staged reconciliation, zero unlinked player IDs, and zero duplicate player-week keys. It also records 78 text or placeholder cells retained in source JSON while the corresponding numeric fields use NULL.
+The report recorded zero workbook-field mismatches for the staged reconciliation, zero unlinked player IDs, and zero duplicate player-week keys. These checks validated the import against its source; they did not establish that the source calculations were correct.
 
-These are saved local validation results, not checks rerun against a database for this documentation change. The underlying report, source data, and database are not currently included in this repository. These counts describe that saved snapshot, not complete league coverage or a current-season total.
+The October 27 case study subsequently found goal-reward inconsistencies in the imported source data. Brian White's April 14 source formula and dependent totals were corrected in Excel during the walkthrough. The database synchronization and remaining historical cleanup are deferred. See the case study for the observed results and limits.
+
+These snapshot counts come from a saved local report, not a database recheck performed for this documentation update. The underlying full database and report are not included here.
 
 ## Remaining portfolio work
 
-1. Reconcile the applicable scoring rules for each season.
-2. Package a portable schema and sample dataset with source attribution and clear coverage.
-3. Add analytical queries for weekly rankings, contribution breakdowns, and player trends.
-4. Include validation queries that check duplicate keys, missing values, and player links.
-5. Add dashboard screenshots and a verified Tableau link.
-6. Write a short case study using results reproduced from the packaged sample.
-7. Build the GitHub profile introduction around the finished project.
+1. Package a portable schema and clearly attributed sample dataset.
+2. Complete validation of the selected two-week sample and rerun its analytical queries.
+3. Add a Tableau visualization and verified dashboard link.
+4. Build a GitHub profile introduction focused on data analyst skills.
+5. Investigate and repair the broader historical data separately.
 
-## Publication standard
+## Source and calculation standards
 
-Document only results supported by source records or reproducible queries. Distinguish sample data from actual player data and custom monetary scores from real compensation. Remove machine-specific paths and credentials from any scripts before packaging them.
+Use season-appropriate scoring rules, retain source provenance, and distinguish original observations from corrected results. Verify player/statistic alignment before using formulas to repair rewards. Remove credentials and machine-specific paths from any scripts included in a runnable release.
